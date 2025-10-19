@@ -9,7 +9,7 @@ mydb = mysql.connector.connect (
 
 mycursor = mydb.cursor()
 
-mycursor.execute("CREATE DATABASE alx_book_store")
+mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
 
 mycursor.execute("USE alx_book_store")
 
